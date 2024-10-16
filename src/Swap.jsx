@@ -12,12 +12,8 @@ const connection = new Connection(
 export default function Swap() {
   const { publicKey, connected, signTransaction } = useWallet();
   const [swapStatus, setSwapStatus] = useState(null);
-  const [inputToken, setInputToken] = useState(
-    "So11111111111111111111111111111111111111112"
-  );
-  const [outputToken, setOutputToken] = useState(
-    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
-  );
+  const [inputToken, setInputToken] = useState("SOL");
+  const [outputToken, setOutputToken] = useState("USDC");
 
   const [amount, setAmount] = useState("");
 
