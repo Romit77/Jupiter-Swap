@@ -5,9 +5,7 @@ import { useState } from "react";
 import { Buffer } from "buffer";
 import { Toaster, toast } from "sonner";
 
-const connection = new Connection(
-  "https://solana-mainnet.g.alchemy.com/v2/Ebs5VVFMeNeBW-6RiW7pZwFvXDlE5Evz"
-);
+const connection = new Connection("https://api.mainnet-beta.solana.com");
 
 export default function Swap() {
   const { publicKey, connected, signTransaction } = useWallet();
